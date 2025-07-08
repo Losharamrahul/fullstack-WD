@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            justifcontent: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .signin-container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .signin-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .signin-container input[type="text"],
+        .signin-container input[type="password"] {
+            width:150px;
+            padding: 8px 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .remember-me-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            font-size: 0.98rem;
+            color: #555;
+        }
+        .remember-me-container input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .signin-container button {
+            width: 100%;
+            padding: 10px;
+            background: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .signin-container button:hover {
+            background: #357abd;
+        }
+        .signup-link {
+            display: block;
+            margin-top: 16px;
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 0.98rem;
+        }
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="signin-container">
+        <img src="mrec.jpg" style="background-size:auto ;"><br>
+        <h2>Sign In</h2>
+        <form>
+            <input type="text" id="emailOrUsername" name="emailOrUsername" placeholder="Email or Username" required >
+            <i class="fa-solid fa-user"></i><br>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <i class="fa-solid fa-lock"></i>
+            <div class="remember-me-container" >
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe" style="margin:0;cursor:pointer;">Remember me</label>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <a href="signup.html" class="signup-link">Don't have an account? Create one</a>
+    </div>
+</body>
+</html>
