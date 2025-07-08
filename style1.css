@@ -1,0 +1,22 @@
+.parent{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    /* gap: 20px; */
+    /* column-gap:10px;  */
+    row-gap: 10px;
+    gap: 30px;
+    justify-content:center;
+}
+.box{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    padding: 20px;
+
+}
+.box:first-child{
+    /* grid-row: span 3; */
+    /* grid-column: span 2; */
+}
