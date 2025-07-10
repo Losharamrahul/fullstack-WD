@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+            background-color: aliceblue;
+            display: flex;
+            
+        }
+        h1{
+            color: blue;
+        }
+        .example{
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+            background-color: blueviolet;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.5 ease;
+            
+    
+        }
+        .bg:hover{
+            background-color: red;
+        }
+        .size:hover{
+            height: 500px;
+            width: 500px;
+        }
+        .border:hover{
+            border:10px solid gold;
+            border-radius: 15px;
+    
+        }
+        .opacity:hover{
+            opacity: 0.3;
+        }
+        .scale:hover{
+            transform: scale(1.3);
+        }
+        .rotate:hover{
+            transform: rotate(50deg);
+        }
+        .move:hover{
+            transform: translatex(50px);
+        }
+        .multiple:hover{
+            transform:rotate(45deg) translateX(40px) ; 
+        }
+
+
+    </STYLE>
+</head>
+<body>
+    <h1> ALL CSS TRANSITIONS</h1>
+    <div class="box-container">
+    <div class="box-label">background-color</div>
+    <div class="example bg"></div>
+    </div>
+    <div class="box-container">
+    <div class="box-label">size</div>
+    <div class="example size"></div>
+    </div>
+
+    <div class="box-container">
+  <div class="box-label">border</div>
+  <div class="example border"></div>
+    </div>
+  
+    <div class="box-container">
+        <div class="box-label">opacity</div>
+        <div class="example opacity"></div>
+    </div>
+    <div class="box-container">
+        <div class="box-label">scale</div>
+        <div class="example scale"></div>
+    </div>
+    <div class="box-container">
+        <div class="box-label">rotate</div>
+        <div class="example rotate"></div>
+    </div>
+    <div class="box-container">
+        <div class="box-label">move</div>
+        <div class="example move"></div>
+    </div>
+    <div class="box-container">
+        <div class="box-label">multiple</div>
+        <div class="example multiple"></div>
+    </div>
+</body>
+</html>
