@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Animation</title>
+    <style>
+        body{
+            font-family: Arial,  sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color:lightcyan;
+        }
+        h1{
+            margin-bottom: 40px;
+            color: brown;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            background-color: green;
+        }
+        .fade-in{
+            animation: fadein 2s ease forwards;
+        }
+        @keyframes fadein {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+            
+        }
+        .slide-in{
+            animation: slidein 2s ease forwards ;
+        }
+        @keyframes slidein {
+            0%{transform: translateX(50px); opacity: 0;}
+            100%{transform: translateX(0);opacity: 1;}}
+        .bounce{
+            animation: bounce 2s ease forwards ;}
+        @keyframes bounce {
+            0%,20%,50%,80%,100%{
+                transform: translateY(0);
+            }
+            40%{
+                 transform: translateY(-30px);
+            }
+            60%{
+                 transform: translateY(-15px);
+            }
+        }
+        .rotate{
+            animation: rotate 2s ease infinite;
+
+        }
+        @keyframes rotate{
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+                transform: ;
+            }
+        }
+        .scale-up{
+            animation: scaleup 2s ease forwards;
+        }
+           @keyframes scaleup{
+            0%{
+                transform: scale(1);
+            }
+             100%{
+                transform: scale(1.5);
+            }
+
+           }
+    </style>
+</head>
+<body>
+    <h1>CSS ANIMATIONS</h1>
+    <div class="block">
+        <div class="box fade-in"></div>
+        <div class="label">fade in</div>
+    </div>
+    <div class="block">
+        <div class="box slide-in"></div>
+        <div class="label">slide in</div>
+    </div>
+    <div class="block">
+        <div class="box bounce"></div>
+        <div class="label">bounce</div>
+    </div>
+    <div class="block">
+        <div class="box rotate"> <img src="CAR.JPG" height="100px" width="100px"></div>
+        <div class="label">rotate</div>
+    </div>
+    <div class="block">
+        <div class="box scale-up"></div>
+        <div class="label">scale up</div>
+    </div>
+    
+    
+
+
+    
+</body>
+</html>

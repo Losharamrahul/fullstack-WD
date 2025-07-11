@@ -1,0 +1,29 @@
+.container{
+    height: 400px;
+    width: 700px;
+    
+    animation: transform 4s;
+    /* animation: coding 4s; */
+    /* animation: bgchange 5s; */
+}
+@keyframes coding{
+    from{background-color: brown;}
+    to{background-color: aqua;}
+    
+}
+@keyframes bgchange{
+    0%{background-color: yellow;}
+    25%{background-color: green;}
+    50%{background-color:red;}
+    75%{background-color:lightseagreen;}
+    100%{background-color: black;}
+  
+    
+}
+@keyframes transform{
+    0%{transform: translate(0px);}
+    25%{transform: translate(100px);}
+    50%{transform: translate(300px);}
+    75%{transform: translate(500px);}
+    100%{transform: translate(700px);}
+}
